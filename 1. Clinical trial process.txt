@@ -29,14 +29,14 @@ if approved --->
 						if enters other than those two it pops up the error
 		raw data preparation
 		
-6. Data analysis
+** 6. Data analysis **
 		Biostatisticians (based on SAPs)
 			1.asks sasprogrammers to generate reports for study
 			2.checks and study
 			3.submit them to medical writing team
 		
 		
-		SAS Programmers (based on SAPs)
+		** SAS Programmers (based on Protocol, SDTM IG, ADaM IG, SAPs, spec, acrf, CDISC Standards ) **
 			1.get the data from cdm
 			
 			2.these will generate reports (tables, listings, figures/graphs)
@@ -54,3 +54,4 @@ if approved --->
 				
 
 8. Submission to FDA/EMA/DCGI
+
