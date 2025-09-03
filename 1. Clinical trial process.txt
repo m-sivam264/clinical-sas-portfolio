@@ -1,22 +1,22 @@
 
-clinical trial process:
+## clinical trial process:
 
-1.protocal -- prepare a protocal for a clinical trail process then sent to fda for approval
+** 1.protocal -- prepare a protocal for a clinical trail process then sent to fda for approval **
 
-2.fda --> check and approve the protocal
+*** 2.fda --> check and approve the protocal **
 
-if approved
+if approved --->
 
-3.investigator selection --> specialists
+** 3.investigator selection --> specialists **
 
-4.patient/subject recruitment process --> inclusion & exclusion criteria
+** 4.patient/subject recruitment process --> inclusion & exclusion criteria **
 		inclusion --> whom to selection for trails
 		exclusion ---> whom to reject from selection
 		
 		who will recruit investigators and subjects --> clinical research associates or monitors team
 		
 
-5.clinical data management team 
+** 5.clinical data management team  **
 	A. data entry --> crf --> case report form
 					TYPES	1. paper crf
 							2. electronic crf
@@ -52,4 +52,5 @@ if approved
 			and prepares the clinical study reports (csr) 
 				then submitted to the sponsors nd fda
 				
+
 8. Submission to FDA/EMA/DCGI
