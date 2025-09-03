@@ -1,0 +1,55 @@
+
+clinical trial process:
+
+1.protocal -- prepare a protocal for a clinical trail process then sent to fda for approval
+
+2.fda --> check and approve the protocal
+
+if approved
+
+3.investigator selection --> specialists
+
+4.patient/subject recruitment process --> inclusion & exclusion criteria
+		inclusion --> whom to selection for trails
+		exclusion ---> whom to reject from selection
+		
+		who will recruit investigators and subjects --> clinical research associates or monitors team
+		
+
+5.clinical data management team 
+	A. data entry --> crf --> case report form
+					TYPES	1. paper crf
+							2. electronic crf
+							
+							convert into data sets (EDC --electronic data capture -- store large data, secure)
+							
+	B. data validation (manaager)
+		edit checks --> autometically validates the data when entry thing happens
+				ex. gender -- Male or Female
+						if enters other than those two it pops up the error
+		raw data preparation
+		
+6. Data analysis
+		Biostatisticians (based on SAPs)
+			1.asks sasprogrammers to generate reports for study
+			2.checks and study
+			3.submit them to medical writing team
+		
+		
+		SAS Programmers (based on SAPs)
+			1.get the data from cdm
+			
+			2.these will generate reports (tables, listings, figures/graphs)
+				TLFs/TLGs
+			3. then pass the reports to statisticians
+			
+7. Medical Writing Team
+		write synopsis
+			what happens in trail
+			side affects of the drug
+			how the drugs working
+			
+			and prepares the clinical study reports (csr) 
+				then submitted to the sponsors nd fda
+				
+8. Submission to FDA/EMA/DCGI
