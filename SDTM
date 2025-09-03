@@ -1,1 +1,67 @@
 
+
+1. sponsor --> drug to be sold --> fda --> approval needs --> safety and efficacy --> approve
+
+2. to check the drugs--> clinical trials
+
+3. subjects  --- investigators
+
+4. prepare protocol and get approval from fda
+5. selections (subjects & investigators)
+6. cdm team (data entry (prepare crf) & data managers (validat and prepare rawdata)
+7. biostats(prepares SAPs based on protocol), sas programmer prepares the reports on request of biostats.
+8. medical writing team --> synopsys --> submits to biostats --- those people will submit csr to fda
+
+
+protocol
+
+unbiased technique: 
+
+randomisation
+	20 people --> 10 & 10  
+
+blindeding and unblinded
+
+placebo --> sugar pill --> no active ingrediant
+
+multicenter
+
+parallel group
+
+comparing efficacy
+
+some other drugs
+
+
+title of the study
+purpose of the  study
+study population
+iclusion & exclusion criteria
+
+study:
+
+prestudy--|-- study period ---|-- post study
+
+study period / elements : 1. screening--> selections
+						  2. treatment --> trt1 --- trt2 --- tr3
+						  3. Follow up
+			*. no two elements should overlap ***
+			* epoch --> combining of multiple elments --> trt1, trt2, trt3 --> under treatment
+
+
+			
+		visit1	visit2	visit3	visit4
+dm		 X
+lb					x
+ecg							x
+vs		 x			x		x	x
+
+		* visit --> scheduled visits (preplanned)
+		* logs --> unscheduled visits
+		* population flags --> 
+				1. enrolled pop : subjects who signed ICF
+				2. screen failures : fail screen
+				3. intent to trear (ITT) : who passes the screening
+				4. safety pop : taking atleast one dose of drug and if they are safe
+				5. per protocol : without protocol deviation AS PER PROTOCOL 
+				6. excluded subjects : having protocol deviations
