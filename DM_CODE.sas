@@ -1,5 +1,17 @@
 ﻿
-/*DM Domain Practice*/
+/*DM Domain Practice
+	  Practice code for learning Clinical SAS (SDTM DM derivations).
+      Uses mock datasets only – no real clinical data included.
+
+   	 SDTM Domain Resources --> 1. Protocol
+	 						   2. SDTM IG
+		   					   3. aCRF
+			 				   4. Spec
+		   					   5. CDISC Standards
+			 				   6. SAP
+		   					   7. Raw datasets
+			 				   9. Trial Design Domains
+*/
 
 libname rawdata 'D:\Clinical_Projects\Domains_Learn\Classes\RAW';
 libname DM 'D:\Clinical_Projects\Domains_Learn\Classes\DM';
@@ -580,6 +592,7 @@ proc sql;
 			ARMCD, ARM, ACTARMCD, ACTARM, COUNTRY, DMDTC, DMDY
 	from DM.TWELVE;
 quit; proc print; run;
+
 
 
 
