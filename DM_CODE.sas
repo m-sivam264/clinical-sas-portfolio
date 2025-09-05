@@ -414,9 +414,7 @@ proc print; run;
 */
 
 proc sql;
-	create table DM.DMDTC as select USUBJID, RFICDTC as DMDTC,
-		case
-			when DMDTC > 
+	create table DM.DMDTC as select USUBJID, RFICDTC as DMDTC 
 	from DM.RFICDTC;
 quit;
 proc print; run;
@@ -557,6 +555,7 @@ proc print;
 run;
 
 /* adding DMDTC DMDY*/
+proc sort data = DM.DMDTC; by USUBJID; run;
 
 data DM.TWELVE;
 	merge DM.ELEVEN (in = a)
@@ -578,20 +577,44 @@ run;
 
 libname SDTM 'D:\Clinical_Projects\Domains_Learn\Classes\SDTM DOMAINS';
 
-data SDTM.DM;
-	set DM.TWELVE (keep = STUDYID DOMAIN USUBJID SUBJID RFSTDTC RFENDTC RFXSTDTC RFXENDTC RFICDTC RFPENDTC DTHDTC DTHFL SITEID 
-			AGE AGEU SEX RACE ETHNIC
-			ARMCD ARM ACTARMCD ACTARM COUNTRY DMDTC DMDY);
-run;
-
-/*OR*/
-
 proc sql;
-	create table SDTM.DM as
-	select STUDYID, DOMAIN, USUBJID, SUBJID, RFSTDTC, RFENDTC, RFXSTDTC, RFXENDTC, RFICDTC, RFPENDTC,DTHDTC, DTHFL, SITEID, AGE, AGEU, SEX, RACE, ETHNIC,
+	create table SDTM.DM_SIVA_M as
+	select STUDYID, DOMAIN, USUBJID, SUBJID, RFSTDTC, RFENDTC, RFXSTDTC, RFXENDTC, RFICDTC, RFPENDTC,DTHDTC, DTHFL, SITEID,
+			AGE, AGEU, SEX, RACE, ETHNIC,
 			ARMCD, ARM, ACTARMCD, ACTARM, COUNTRY, DMDTC, DMDY
 	from DM.TWELVE;
 quit; proc print; run;
+
+proc datasets lib=SDTM nolist;
+    modify SDTM.DM_SIVA_M;
+
+	label STUDYID = 'Study Identifier'
+			DOMAIN = 'Domain Abbreviation'
+			USUBJID = 'Unique Subject Identifier'
+			SUBJID = 'Subject Identifier for the Study'
+			RFSTDTC = 'Subject Reference Start Date/Time'
+			RFENDTC = 'Subject Reference End Date/Time'
+			RFXSTDTC = 'Date/Time of First Study Treatment'
+			RFXENDTC = 'Date/Time of Last Study Treatment'
+			RFICDTC = 'Date/Time of Informed Consent'
+			RFPENDTC = 'Date/Time of End of Participation'
+			DTHDTC = 'Date/Time of Death'
+			DTHFL = 'Subject Death Flag'
+			SITEID = 'Study Site Identifier'
+			AGE = 'Age'
+			AGEU = 'Age Units'
+			SEX = 'Sex'
+			RACE = 'Race'
+			ETHNIC = 'Ethnicity'
+			ARMCD = 'Planned Arm Code'
+			ARM = 'Description of Planned Arm'
+			ACTARMCD = 'Actual Arm Code'
+			ACTARM = 'Description of Actual Arm'
+			COUNTRY = 'Country'
+			DMDTC = 'Date/Time of Collection'
+			DMDY = 'Study Day of Collection';
+quit;
+
 
 
 
